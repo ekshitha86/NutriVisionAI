@@ -70,12 +70,13 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 print("Training RandomForestClassifier...")
 model = RandomForestClassifier(
-    n_estimators=300,
-    max_depth=None,
-    min_samples_split=2,
+    n_estimators=500,
+    max_depth=20,
     random_state=42,
     n_jobs=-1
 )
+
+
 
 model.fit(X_train, y_train)
 
